@@ -10,11 +10,6 @@ app.configure(function () {
     app.use(express.bodyParser());
     app.use(express.static(path.join(__dirname, 'client/')));
 });
-/** l
-oad routes*/
-app.get('/', function(req, res) {
-    res.sendFile('./client/index.html'); // load the single view file (angular will handle the page changes on the front-end)
-});
 
 require('./server/routes')(app);
 
