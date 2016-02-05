@@ -1,0 +1,109 @@
+*
+{
+  padding: 0;
+  margin: 0;
+}
+body, html
+{
+  font-size: 100%;
+  font-family: Arial;
+  color: #111;
+  overflow-x: hidden;
+}
+a
+{
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+p
+{
+  font-size: 0.9em;
+}
+label
+{
+  color: #333;
+  font-size: 0.8em;
+}
+.heading
+{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #FF692F;
+  text-align: center;
+}
+a.box
+{
+  display: block;
+  padding: 40px;
+  background: #FF804F;
+  color: #FBDDC8;
+  text-transform: uppercase;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+a.box:hover
+{
+  background: #FF692F;
+  color: #fff !important;
+}
+.btn-orange
+{
+  background: #FF692F;
+  color: #fff;
+}
+.btn-orange:hover
+{
+  transition: all ease-in-out 0.3s;
+  color: #fff;
+}
+.border-bottom
+{
+  border-bottom: 1px solid #ddd;
+}
+.border-left
+{
+  border-left: 1px solid #ddd !important;
+}
+.gap
+{
+  height: 50px;
+}
+.color-orange
+{
+  color: #FF692F;
+}
+input[type=file] {
+    text-align: center;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: none;
+}
+.btn-full
+{
+  width: 100%;
+}
+.box-icon
+{
+  border: 1px solid #eee;
+  height: 220px;
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.img-label
+{
+  text-align: center;
+  color: #FF692F;
+  font-weight: 700;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+.center
+{
+  text-align: center;
+}

@@ -1,0 +1,32 @@
+<div data-ng-controller="AppController">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="heading">Image File Upload with Label</h3>
+		</div>
+		<div class="col-md-6">
+		   <form name="myForm">
+		   	 <div class="col-md-4">
+		   	 	<label class="btn btn-primary btn-full">
+		   	    	<input type="file" ngf-select ng-model="image" name="file" accept="image/*" ngf-max-size="400KB" required>Browse
+		     	 </label>
+		   	 </div>
+		   	 <div class="col-md-3">
+		   	 	<button class="btn btn-orange" ng-disabled="!myForm.$valid" ng-click="upload(image)">Submit</button>
+		   	 </div>
+		   </form>
+		</div>
+	</div>
+	<div class="row">
+	  <div ng-repeat="photo in imageList">
+		<div class="col-md-3">
+			<div class="box-icon">
+				<img class="img-responsive" ng-src={{photo.image}}>
+			</div>	
+			<p class="img-label">{{photo.imageName}}</p>
+		</div>
+	  </div>
+	</div>
+</div>	
+</div>
+</div>

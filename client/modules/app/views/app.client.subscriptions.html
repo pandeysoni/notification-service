@@ -1,0 +1,22 @@
+<div data-ng-controller="AppController">
+<div class="gap"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<div class="form-group">
+				<label>Please select the city</label>
+				<select ng-model="city" class="form-control" ng-options="city.location as city.cityName for city in cities" ng-init="city=''" data-ng-click="getWeather(city)">
+	              <option value="">Select City</option>
+	            </select>
+            </div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<div class="form-group">
+				<p class="color-orange" ng-show="weather">The Current Weather is <strong>{{weather}}</strong> degrees</p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
